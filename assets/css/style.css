@@ -83,84 +83,91 @@ body {
 
 
 
-
-.sobremi{
+.sobremi {
     background-color: #ededf0;
     color: #282c3d;
     padding: 50px 20px;
 }
 
-
-
-.sobremi .fila{
-    display: flex;
-}
-.sobremi .fila .col
-{
-    width: 50%;
-}
-
-.sobremi .fila .col ul{
-    list-style: none;
-}
-.sobremi .fila .col ul li{
-    margin: 12px 0;
-}
-.sobremi .fila .col ul li strong{
-    display: inline-block;
-    color: hsl(189, 100%, 50%);
-    width: 130px;
-}
-.sobremi .fila .col ul li span{
-    background-color: hsl(189, 100%, 50%);
-    padding: 3px;
-    font-weight: bold;
-    border-radius: 5px;
-}
-.sobremi .fila .col .contenedor-intereses{
+.sobremi .fila {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
-.sobremi .fila .col .contenedor-intereses .interes{
+
+.sobremi .fila .col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobremi .fila .col ul li {
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong {
+    color: hsl(189, 100%, 50%);
+}
+
+.sobremi .contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.sobremi .contenedor-intereses .interes {
     width: 100px;
     height: 100px;
     background-color: #282c3d;
     color: #fff;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    transition: background-color 0.3s ease;
+}
+
+.sobremi .contenedor-intereses .interes:hover {
     background-color: hsl(189, 100%, 50%);
 }
-.sobremi .fila .col .contenedor-intereses .interes i{
+
+.sobremi .contenedor-intereses .interes i {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-
+/* Botón de descargar CV */
 .button-container {
-    display: flex; 
-    justify-content: center; 
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .btn-download {
-    display: inline-block;
+    background-color: hsl(189, 100%, 50%);
+    color: white;
     padding: 10px 20px;
-    background-color: hsl(301, 100%, 72%);
-    color: #fff;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s; /* Cambio suave de color */
+    transition: background-color 0.3s;
 }
 
 .btn-download:hover {
-    background-color: hsl(301, 100%, 60%); /* Ajuste del color al hacer hover */
+    background-color: #282c3d;
 }
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sobremi .fila {
+        flex-direction: column;
+    }
+}
+
 
 
 
@@ -264,3 +271,5 @@ footer {
 footer p {
     margin: 0;
 }
+
+
