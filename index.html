@@ -1,78 +1,318 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum</title>
-    <link rel="icon" type="image/png" href="assets/imgs/banana.png">
-    <style>
-        body {
-            font-size: 14px; /* Cambia el tamaño de fuente a 14px */
-            line-height: 1.2; /* Ajusta el espaciado entre líneas */
-        }
-    </style>
+    <title>Curriculum - Maria Fernanda Rios</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/5f265d1070.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
+
+
 </head>
+
 <body>
-<!-- Barra de navegación -->
-<nav>
-    <a href="#about">Sobre mí</a>
-    <a href="#personal">Datos Personales</a>
-    <a href="#experience">Experiencia</a>
-    <a href="#education">Educación</a>
-    <a href="#portfolio">Portafolio</a>
-    <a href="#contact">Contacto</a>
-</nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color">
+        <div class="container"> <!-- Cambié container-fluid a container -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.png" alt="Logo" width="150">
+            </a>
+            <!-- Botón colapsable para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <!-- Menú de navegación -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a href="#inicio">INICIO</a></li>
+                    <li class="nav-item"> <a href="#sobremi">SOBRE MI</a></li>
+                    <li class="nav-item"> <a href="#skills">SKILLS</a></li>
+                    <li class="nav-item"> <a href="#curriculum">CURRICULUM</a></li>
+                    <li class="nav-item"> <a href="#portfolio">PORTAFOLIO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- Contenido del CV -->
-<section id="about">
-    <img src="assets/imgs/Fernanda.jpeg" alt="Foto de Maria Fernanda" style="width: 5%;">
-    <h1>Maria Fernanda Rios Valencia</h1>
-    <h3>Sobre mí</h3>
-    <p>Ingeniero con un gran interés en la tecnología, el análisis de datos, los procesos y el desarrollo de proyectos. Responsable, con habilidades en relaciones interpersonales, comprometido, con capacidad de aprendizaje y adaptación a nuevos desafíos.</p>
+    <!-- Contenido del CV -->
+    <section id="inicio" class="inicio">
+        <div class="container">
+            <div class="profile">
+                <img src="assets/imgs/Fernanda.png" alt="Foto de Maria Fernanda" class="profile-pic">
+                <h1>Maria Fernanda Rios</h1>
+                <h3>Ingeniera Civil Industrial</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://cl.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/franco-montana"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION SOBRE MI -->
+     <section id="sobremi" class="sobremi">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Ingeniera Civil Industrial con experiencia en telecomunicaciones y optimización de procesos, enfocada en planificación y control de gestión. Apasionada por aprender y aplicar conceptos de desarrollo web, con especialización en análisis de datos, mejora continua y gestión de KPIs para maximizar la eficiencia operativa.
+
+            </p>
+
+            <div class="fila">
+
+
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            10 de abril de 1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +56 9 6354 1561
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            riosv.mf@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Shimon peres 71, Lo barnechea, RM
+                        </li>
+                </div>
+
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+ 
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+
+
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="button-container">
+                <a href="./assets/css/MARIA FERNANDA RIOS VALENCIA.pdf" target="_blank" download="Cv_Fernanda" class="btn-download">Descargar CV</a>
+            </div>
+            
+
+
+        </div>
+    </section>
+
+  <!-- Sección Skills -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="skill-card">
+                <h4>Habilidades Técnicas</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>JavaScript</strong></li>
+                    <li><strong>HTML & CSS</strong></li>
+                    <li><strong>GitHub</strong></li>
+                    <li><strong>Bootstrap</strong></li>
+                    <li><strong>Python</strong></li>
+                    <li><strong>Office (Excel, Word, PowerPoint)</strong></li>
+                    <li><strong>SQL</strong></li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h4>Habilidades Profesionales</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>Proyectos</strong></li>
+                    <li><strong>Análisis de Datos</strong></li>
+                    <li><strong>Planificación</strong></li>
+                    <li><strong>Presupuestos</strong></li>
+                    <li><strong>Control de Gestión</strong></li>
+                    <li><strong>Informes</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="personal">
-    <h3>Datos Personales</h3>
-    <ul>
-        <li>Nombre: Maria Fernanda Rios Valencia</li>
-        <li>Lugar de Nacimiento: Antofagasta, Chile</li>
-        <li>Fecha de Nacimiento: 10 de abril de 1992</li>
-    </ul>
-</section>
 
-<section id="experience">
-    <h3>Experiencia</h3>
-    <ul>
-        <li>2021-PRESENTE: ADMINISTRADOR DE RESTAURANTE FAMILIAR</li>
-        <li>2016-2021: ANALISTA DE CONTROL DE GESTIÓN Y PLANIFICACIÓN DE OPERACIONES, VTR (LIBERTY GLOBAL), SANTIAGO, CHILE</li>
-        <li>2015-2016: ANALISTA DE REPORTES, ÁREA COMERCIAL, VTR (LIBERTY GLOBAL), SANTIAGO, CHILE</li>
-        <li>2015: ANALISTA DE CONTROL DE GESTIÓN, RECURSOS HUMANOS, VTR (LIBERTY GLOBAL), SANTIAGO, CHILE</li>
-        <li>2014: PRÁCTICA PROFESIONAL - ANALISTA DE CONTROL DE GESTIÓN, RECURSOS HUMANOS, VTR (LIBERTY GLOBAL), SANTIAGO, CHILE</li>
-    </ul>
-</section>
 
-<section id="education">
-    <h3>Educación</h3>
-    <h5>2010 – 2015 | UNIVERSIDAD DEL DESARROLLO, SANTIAGO, CHILE.</h5>
-    <p>Ingeniería Civil Industrial</p>
-</section>
 
-<section id="portfolio">
-    <h3>Portafolio</h3>
-    <p>Visita mi <a href="portafolio.html">portafolio</a>.</p>
-    <p>Puedes encontrarme en <a href="https://www.linkedin.com/in/mar%C3%ADa-fernanda-r%C3%ADos-598107100/">LinkedIn</a>.</p>
-</section>
 
-<section id="contact">
-    <h3>Contacto</h3>
-    <p>Correo: mfer@ejemplo.com</p>
-</section>
+    <!-- Sección Curriculum -->
+    <section id="curriculum" class="curriculum bg-light">
+        <div class="container">
+            <h2 >Curriculum</h2>
+            <div class="grid">
+                <div class="col">
+                    <h3>Educación</h3>
+                    <div class="item">
+                        <h4>Desarrollo Fullstack</h4>
+                        <span>Desafio Latam | 2024 - 2025</span>
+                        <p>Capacidad de trabajar en todas las capas de una aplicación web, tanto en el lado del cliente como del servidor.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Data Science</h4>
+                        <span>Desafio Latam | 2020 - 2021</span>
+                        <p>Carrera diseñada para adquirir competencias en análisis de datos e implementación de modelos.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Ingeniería Civil Industrial</h4>
+                        <span>Universidad del Desarrollo | 2010 - 2014</span>
+                        <p>Conocimientos en gestión de proyectos y optimización de procesos.</p>
+                    </div>
+                </div>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Maria Fernanda Rios Valencia.</p>
-</footer>
+                <div class="col">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item">
+                        <h4>Owner</h4>
+                        <span>Banana Berry Miami | 2021 - Actualidad</span>
+                        <ul>
+                            <li>Administración completa del restaurante.</li>
+                            <li>Relación directa con proveedores y control de inventarios.</li>
+                            <li>Supervisión financiera y control de costos.</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Analista Planificación y Control</h4>
+                        <span>VTR-Liberty Latin America | 2016 - 2021</span>
+                        <ul>
+                            <li>Proyección y planificación de actividades críticas.</li>
+                            <li>Monitoreo y control de la planificación.</li>
+                            <li>Análisis de datos y generación de informes.</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Analista de Reporting</h4>
+                        <span>VTR-Liberty Latin America | 2015 - 2016</span>
+                        <ul>
+                            <li>Consolidación de datos e informes operativos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portafolio</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="./assets/imgs/proyecto1.png" alt="CV Primera Clase">
+                    <div class="overlay">
+                        <h4>CV Primera Clase</h4>
+                        <p>CV</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./assets/imgs/proyecto2.png" alt="CSS">
+                    <div class="overlay">
+                        <h4>CSS</h4>
+                        <p>Introducción a CSS</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./assets/imgs/proyecto3.png" alt="FLEX">
+                    <div class="overlay">
+                        <h4>Flexbox</h4>
+                        <p>Alineando contenido con Flex</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./assets/imgs/proyecto4.png" alt="BOOTSTRAP">
+                    <div class="overlay">
+                        <h4>Bootstrap</h4>
+                        <p>Creando página</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Maria Fernanda Rios Valencia.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    
+  
+ <!-- Movimiento líneas de skill -->
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const skillsSection = document.getElementById("skills");
+        const progressBars = document.querySelectorAll(".progress");
+
+        function animateProgressBars() {
+            progressBars.forEach((bar) => {
+                const skillLevel = bar.getAttribute('data-skill');
+                bar.style.width = skillLevel + '%'; // Usamos el valor del data-atributo
+            });
+        }
+
+        function onScroll() {
+            const skillsPosition = skillsSection.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            // Verifica si la sección "Skills" está en la vista
+            if (skillsPosition < windowHeight && skillsPosition > 0) {
+                animateProgressBars(); // Animar las barras
+                window.removeEventListener("scroll", onScroll); // Desactivar el evento después de animar
+            }
+        }
+
+        // Escuchar el evento de scroll
+        window.addEventListener("scroll", onScroll);
+    });
+</script>
+
+
+
+
+
+
+    
+
+    
+    
 
 </body>
+
 </html>
+
+    
